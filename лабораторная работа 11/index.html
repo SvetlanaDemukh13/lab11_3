@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Карина</title>
+    <style>
+        body{
+            background-color: #8B0000;
+        }
+        span{
+            text-align: center;
+        }
+        img{
+            text-align: left;
+            border: 4px inset burlywood;
+        }
+        .text{
+            margin-right:80px;
+            width: 40vw;
+            float: right;
+            padding-left:20px;
+            border: 5px dotted #FDF5E6;
+            text-align: center;
+            background-color: burlywood;
+        }
+        a{
+            color:#8B0000;
+            line-height: 2; /*интервал между заголовком и подчеркиванием, заголовком и границами старницы*/
+            text-decoration:none; /*убирает стандартное подчеркивание ссылки*/
+            cursor: pointer; /*изменяет вид курсора при наведении на блок*/
+            position:relative; /*устанавливает длину подчеркивания в зависимости от длины текстовой строки (иначе подчеркивается вся строка во весь экран)*/
+            font-size: 24pt;
+        }
+        a:after {
+            background-color: #8B0000;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0px;
+            left:50%;
+            position:absolute;
+            -webkit-transition: width .3s ease-in-out;
+            -moz-transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+            -webkit-transform:translateX(-50%);
+            -moz-transform:translateX(-50%);
+            transform:translateX(-50%);
+        }
+        a:hover:after,
+        a:focus:after {
+            width: 100%;
+        }/*живое подчеркивание*/
+    </style>
+</head>
+<body>
+    <img src="DGZjO2wXpLY.jpg" width="560px" height="720px">
+    <div class="text">
+        <a href="https://www.instagram.com/karina__grinkevich/?hl=ru"><i><b>Эта страница посвящена моей подружке</b></i></a>
+        <p style="font-size: 18pt; color: #FA8072; font-family: Arial, Helvetica, sans-serif;">Карина, ты словно из сказки пришла,</p>
+            <p style="font-size: 18pt; color: #F08080; font-family: fantasy;">Ты нежность, добро и любовь принесла,</p>
+            <p style="font-size: 18pt; color:#CD5C5C; font-family: monospace;">И словно луч света в немой темноте,</p>
+            <p style="font-size: 18pt; color:#DC143C; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Спасать ты умеешь в души пустоте.</p>
+            <p style="font-size: 18pt; color: #FF0000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Карина, пусть жизнь твоя будет полна</p>
+            <p style="font-size: 18pt; color: #B22222; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Лишь света и радости, мира, добра,</p>
+            <p style="font-size: 18pt; color:#8B0000; font-family: Verdana, Geneva, Tahoma, sans-serif;">Будь счастлива, ведь тебе свет нам нести</p>
+            <p style="font-size: 18pt; color:#800000; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">На жизненном сложном и долгом пути!</p>
+            <img src="979496686.gif" width="180px" height="190px">
+    </div>
+</body>
+</html>
